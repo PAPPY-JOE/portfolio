@@ -1,286 +1,902 @@
 *{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
 }
 
-@media only screen and (min-width:50px) {
+body,html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#onload{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 8000;
+}
+
+#onload h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inconsolata';
+}
+
+#hero{
+    background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 10vh;
+    width: 100%;
+    color: white;
+    
+}
+
+    .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+    .black{ 
+    background-color: black;
+    opacity: 92%;
+}
+
+#hero #hero-overlay{
+    height: 110vh;
+}
+
+@media only screen and (max-height: 700px){
     #hero{
-        background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
-        background-position: fill;
-        background-repeat: no-repeat;
-        background-size: 100% 120%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+        height: 120vh;
+        padding-bottom: 10vh;
+       
+    }
+    #hero #hero-overlay{
+        height: 130vh;
+    }
+   
+}
+
+#hero #firstBlock{
+    position: relative;
+    z-index: 2;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#hero #header{
+    height: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    width: 100%;
+    position: relative;
+}
+
+#hero #header #owners-name{
+    width: 40%;
+}
+
+#hero #header #menu, #hero #header #navigation{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    line-height: 70px;
+
+}
+
+.menu-body{
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 232, 232);
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 1px;
+    transition: .5s  ease;
+    z-index: 50000;
+}
+
+#hero #header #menu #menu-body:hover{
+    box-shadow: 1px 3px 2px 2px rgb(154, 152, 152) inset;
+    
+}
+
+#hero #header #menu #menu-body p{
+    font-size: 14px;
+    width: 40px;
+    line-height: 40px;
+    color: red;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+#hero #owners-name{
+    font-family: 'Inconsolata', sans-serif;
+    line-height: 44px;
+}
+
+#hero #owners-name h1{        
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 2px;
+    line-height: 70px;
+
+}
+
+#hero #navigation{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+}
+
+#hero #navigation li{
+    list-style-type: none;
+    line-height: 70px;
+    width: 100%;
+}
+
+#hero #navigation li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+}
+
+#hero #navigation li i{
+    width: 0;
+    height: 1px;
+    display: block;
+    margin: 0;
+    margin-top: -15px;
+    transition: .3s ease;
+}
+#hero #navigation li:hover i{
+    width: 40px;
+    height: 1px;
+    background-color: red;
+    display: block;
+    margin: 0;
+    margin-top: -15px;
+}
+
+#hero #menu-container{
+    height: 260px;
+    margin-left: 5%;
+    top: 70px;
+    margin-top: 10px;
+    position: fixed;
+    background-color: #efefef;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-left: 1px;
+    border-radius: 5px;
+    display: none;
+    transition: .3s ease;
+    z-index: 1000;
+}
+
+#hero #menu-container li{
+    line-height: 61.5px;
+    list-style-type: none;
+    padding-left: 15px;
+    margin: 0 0 4px 0;
+    background-color: white;
+    box-shadow: -1px -1px 2px 2px rgb(233, 233, 233) inset;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.lower-resolution{
+    display: none;
+}
+
+#hero #menu-container li a{
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    width: 135px;
+    line-height: 20px;
+}
+
+#hero #menu-container li:hover{
+    box-shadow: -1px -3px 2px 2px rgb(204, 204, 204) inset;
+}
+
+#hero #menu-container li:hover a{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#hero #first-block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.first-body{
+    width: 40vw;
+    padding-bottom: 1px;
+    height: auto;
+    margin: 50px 0 10px 0;
+}
+
+#hero #first-block #body-text{
+    background-color: white;
+    color: black;       
+    height: 100%; 
+    padding-bottom: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#hero #first-block #body-text #body-text-block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: red;
+    padding: 0 45px 0 45px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 45px ;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Inconsolata';
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 15%;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Lato';
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    transition: .3s ease;
+    position: absolute;
+    box-shadow: 3px 4px 3px 1px rgba(171, 168, 168, 0.933);
+    cursor: pointer;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
+    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933);
+
+}
+
+#hero #first-block aside{
+    background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    position: relative;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#hero aside .black{
+    opacity: 34%;
+}
+.red{
+        background-color: red;
+        opacity: 24%;
         width: 100%;
-        color: white;
-        
     }
 
-     .overlay{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
 
-     .black{ 
-        background-color: black;
-        opacity: 92%;
+
+
+@media only screen and (max-width: 1040px){
+
+    #hero{
+        height: 125vh;
+        padding-bottom: 10vh;
     }
 
     #hero #hero-overlay{
-        height: 100vh;
-    }
-
-    #hero #firstBlock{
-        position: relative;
-        z-index: 2;
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-
-    #hero #header{
-        height: 70px;
-        display: flex;
-        align-content: center;
-        justify-content: start;
-        width: 100%;
-        position: relative;
+        height: 135vh;
     }
 
     #hero #header #owners-name{
         width: 40%;
+        text-align: center;
     }
-
+   
+    #hero #header #menu{
+        width: 20%;
+    }
     #hero #header #menu, #hero #header #navigation{
-        width: 30%;
         height: 70px;
         display: flex;
         align-content: center;
         justify-content: start;
         line-height: 70px;
-
-    }
-
-    #hero #header #menu #menu-body{
-        margin-top: 15px;
-        margin-left: 25px;
-        height: 40px;
-        width: 40px;
-        background-color: white;
-        text-align: center;
-        border-radius: 5px;
-        padding: 0 1px;
-        transition: .3s  ease;
     
     }
 
-    #hero #header #menu #menu-body:hover{
-        box-shadow: 1px 3px 2px 2px rgb(154, 152, 152) inset;
-       
+    #hero #header #navigation{
+        width: 40%;
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
 
-    #hero #header #menu #menu-body p{
-        font-size: 14px;
-        width: 40px;
-        line-height: 40px;
-        color: red;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-        cursor: pointer;
-
-    }
-
-    #hero #owners-name{
-        font-family: 'Inconsolata', sans-serif;
-        line-height: 44px;
-    }
-
-    #hero #owners-name h1{        
-        font-weight: 400;
-        font-size: 38px;
-        letter-spacing: 2px;
-        line-height: 70px;
-
-    }
-
-    #hero #navigation{
-        display: flex;
-        align-content: center;
-        justify-content: start;
-    }
-
-    #hero #navigation li{
-        list-style-type: none;
-        line-height: 70px;
-        width: 100%;
-    }
     
-    #hero #navigation li a{
-        text-decoration: none;
-        color: white;
-        font-family: 'Oswald', sans-serif;
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: 1.5px;
+.first-body{
+    width: 45vw;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block h1{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    color: red;
+    padding: 0 45px 0 45px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 10px 45px 10px 45px ;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    width: 100%;
+    height: 10%;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 15px;
+    width: 20%;
+   
+}
+
+
+
+    
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    #hero{
+        height: 155vh;
     }
 
-    #hero #navigation li i{
-        width: 0;
-        height: 1px;
-        display: block;
-        margin: 0;
-        margin-top: -15px;
-        transition: .3s ease;
-    }
-    #hero #navigation li:hover i{
-        width: 40px;
-        height: 1px;
-        background-color: red;
-        display: block;
-        margin: 0;
-        margin-top: -15px;
+    #hero #hero-overlay{
+        height: 165vh;
     }
 
-    #hero #menu-container{
-        margin-left: 5%;
-        top: 70px;
-        margin-top: 10px;
-        position: absolute;
-        background-color: #efefef;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        padding-top: 0px;
-        padding-left: 1px;
-        border-radius: 5px;
+    #hero #header #navigation{
         display: none;
-        transition: .3s ease;
-        z-index: 1000;
     }
 
-    #hero #menu-container li{
-        line-height: 61.5px;
-        list-style-type: none;
-        padding-left: 15px;
-        margin: 0 0 4px 0;
-        background-color: white;
-        box-shadow: -1px -1px 2px 2px rgb(233, 233, 233) inset;
-        border-radius: 5px;
-        transition: .3s ease;
+    #hero #header #owners-name{
+        width: 80%;
+        text-align: right;
+        padding-right: 5vw;
     }
 
-    .lower-resolution{
-        display: none;
+    #hero #header #owners-name h1{
+        font-size: 35px;
     }
-
-    #hero #menu-container li a{
-        text-decoration: none;
-        color: red;
-        font-size: 16px;
-        font-family: 'Oswald', sans-serif;
-        display: inline-block;
-        width: 135px;
-        line-height: 20px;
-    }
-
-    #hero #menu-container li:hover{
-        box-shadow: -1px -3px 2px 2px rgb(204, 204, 204) inset;
-    }
-
-    #hero #menu-container li:hover a{
-        font-size: 17px;
-        font-weight: 600;
-    }
-
-    #hero #first-block{
-        height: calc(100% - 70px);
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .first-body{
-        width: 40vw;
-        height: 70vh;
-        margin: 50px 0 10px 0;
-    }
-
-    #hero #first-block #body-text{
-        background-color: white;
-        color: black;
-        
-    }
-
-    #hero #first-block #body-text #body-text-block{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-        position: relative;
-        padding: 0;
-    }
-
-    #hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
-        height: 30px;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 50px;
-        text-align: center;
-    }
-
-    #hero #first-block #body-text #body-text-block h1{
-        font-family: 'Inconsolata', sans-serif;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 44px;
-        color: red;
-        padding: 0 45px 0 45px;
-        margin-top: 20px;
-        display: block;
-    }
-
-    #hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
-        padding: 45px ;
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 500;
-        font-family: 'Inconsolata';
-    }
-
-    #hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        height: 15%;
-    }
-
-    #hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
-        padding: 15px;
-        color: white;
-        background-color: red;
-        font-size: 20px;
-        line-height: 20px;
-        font-family: 'Lato';
+   
+    #hero #header #menu{
         width: 20%;
-        border-radius: 5px;
-        text-align: center;
-        transition: .3s ease;
-        position: absolute;
     }
 
-    #hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
-        box-shadow: 3px 4px 3px 1px rgba(171, 168, 168, 0.933);
+    
+#hero #menu-container{
+    height: 455px;
+}
 
+.lower-resolution{
+    display: block;
+}
+
+/* First block */
+
+
+#hero #first-block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding-left: 10vw;
+    margin-top: 30px;
+}
+
+.first-body{
+    width: 80vw;
+    padding-bottom: 1px;
+    height: 75vh;
+    margin: 0 0 50px 0;
+
+}
+
+#hero #first-block #body-text{
+    background-color: white;
+    color: black;     
+    width: 80vw;  
+    height: 75vh; 
+    padding-top: 10px;
+    padding-bottom: 50px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#hero #first-block #body-text #body-text-block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 44px;
+    color: red;
+    text-align: center;
+    padding: 0 45px 0 45px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 25px 45px 10px 45px ;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 500;
+    font-family: 'Inconsolata';
+    text-align: justify;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 15%;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 20%;
+    margin-top: 15px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
+    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933);
+
+}
+
+#hero #first-block aside{
+    background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    position: relative;
+    width: 80vw;
+    height: 50vw;
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.red{
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+}
+
+
+@media only screen  and (max-width: 620px){
+
+    
+    #hero #header #owners-name h1{
+        font-size: 28px;
     }
+   
+    
+.first-body{
+    width: 80vw;
+    padding-bottom: 1px;
+    height: 75vh;
+    margin: 0 0 50px 0;
+
+}
+
+#hero #first-block #body-text{
+    background-color: white;
+    color: black;     
+    width: 80vw;  
+    height: 75vh; 
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#hero #first-block #body-text #body-text-block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 35px;
+    color: red;
+    text-align: center;
+    padding: 0 45px 0 45px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 25px 45px 10px 45px ;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: 'Inconsolata';
+    text-align: justify;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 15%;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 20%;
+    margin-top: 15px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
+    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933);
+
+}
+
+#hero #first-block aside{
+    background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    position: relative;
+    width: 80vw;
+    height: 50vw;
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:490px){
+
+  #hero #first-block{
+      padding: 0 5vw;
+  }
+      
+.first-body{
+    width: 90vw;
+    padding-bottom: 1px;
+    height: 75vh;
+
+}
+
+#hero #first-block #body-text{
+    background-color: white;
+    color: black;     
+    width: 90vw;  
+    height: 75vh; 
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: auto 0;
+}
+
+#hero #first-block #body-text #body-text-block{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    color: red;
+    text-align: center;
+    padding: 0 45px 0 45px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 25px 45px 10px 45px ;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'Inconsolata';
+    text-align: justify;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 15%;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 20%;
+    margin-top: 15px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
+    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933);
+
+}
+
+#hero #first-block aside{
+    background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    position: relative;
+    width: 90vw;
+    height: 60vw;
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 395px){
+    
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 30px;
+    color: red;
+    text-align: center;
+    padding: 0 45px 0 45px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 25px 45px 10px 45px ;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'Inconsolata';
+    text-align: justify;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 15%;
+    padding-top: 15px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    font-size: 14px;
+    line-height: 10px;
+    width: 20%;
+    margin-top: 0;
+}
+
+
+}
+
+
+@media only screen and (max-width: 355px){
+
+    
+#hero #owners-name h1{        
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+    
+.first-body{
+    width: 90vw;
+    padding-bottom: 1px;
+    height: 85vh;
+    overflow: hidden;
+}
+
+#hero #first-block #body-text{
+    background-color: white;
+    color: black;     
+    width: 90vw;  
+    height: 85vh; 
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: auto 0;
+    overflow: scroll;
+}
+
 
     #hero #first-block aside{
         background-image: url(/joseph-fatoye/images/20200804_020522.jpg);
@@ -288,14 +904,64 @@
         background-repeat: no-repeat;
         background-size: 100% 120%;
         position: relative;
+        width: 90vw;
+        height: 80vw;
+        margin-bottom: 0;
+        border-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
+    
+    
+#hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
+    height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 20px 10px;
+    text-align: center;
+}
 
-    #hero aside .black{
-        opacity: 34%;
-    }
-    .red{
-         background-color: red;
-         opacity: 24%;
-         width: 100%;
-        }
+#hero #first-block #body-text #body-text-block h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 30px;
+    color: red;
+    text-align: center;
+    padding: 0 25px 0 25px;
+    margin-top: 20px;
+    display: block;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
+    padding: 25px 15px 10px 15px ;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'Inconsolata';
+    text-align: center;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 15%;
+    padding-top: 15px;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+    padding: 15px;
+    font-size: 14px;
+    line-height: 10px;
+    width: 35%;
+    padding: 20px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+
 }

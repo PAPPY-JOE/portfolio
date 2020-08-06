@@ -4,13 +4,13 @@ let toggleMenuBar = function () {
     let getMenuIcon = document.body.querySelector("#hero #menu #menu-body") 
     let getMenuBar = document.body.querySelector("#hero #menu-container") 
     let getMenuBarList = document.body.querySelector("#hero #menu-container #nav-list") 
+    let w = window.innerWidth
 
     if (toggleMenu === false) {
         getMenuIcon.style.transform = "rotate(90deg)";
         getMenuBar.style.display = "flex";
-        getMenuBar.style.width = "150px";
-        getMenuBar.style.height = "260px";
 
+        
         getMenuBarList.style.height = "58.5px";
         getMenuBarList.style.height = "135px";
 
@@ -19,8 +19,7 @@ let toggleMenuBar = function () {
     else if (toggleMenu === true) {
         getMenuIcon.style.transform = "rotate(0deg)";
         getMenuBar.style.display = "none";
-        getMenuBar.style.width = "0";
-        getMenuBar.style.height = "0";
+       
 
         getMenuBarList.style.height = "0";
         getMenuBarList.style.height = "0";
@@ -31,3 +30,4 @@ let toggleMenuBar = function () {
 }
 
 document.body.querySelector("#hero #firstBlock #menu-body").onclick = toggleMenuBar;
+
