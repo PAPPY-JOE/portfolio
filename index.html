@@ -11,6 +11,7 @@
     <title>Joseph Fatoye | Building perfect websites just for you</title>
     <link rel="shortcut icon" href="images/20200804_020522.jpg" type="image/x-icon">
     <script src="scripts/onload.js"></script>
+    <script src="scripts/menu-scroll.js"></script>
 </head>
 <body onload="onload()">
     <div id="onload">
@@ -25,7 +26,7 @@
             <!-- No background header -->
             <section class="float-header" id="header">
                 <div id="menu">
-                    <div class="menu-body" id="menu-body">
+                    <div class="menu-body on-scroll-down" id="menu-body">
                         <p>Menu</p>
                     </div>
                 </div>
@@ -38,7 +39,7 @@
             </section>
 
             <!-- Menu -->
-            <div id="menu-container">
+            <div id="menu-container" class="on-scroll-down">
                 <div id="nav-list">
                     <li class="lower-resolution"><a href="#getting-started">Get started</a></li>
                     <li class="lower-resolution"><a href="#reviews">Reviews</a></li>
