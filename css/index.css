@@ -676,7 +676,7 @@ body,html{
 
 #third-block-body #CTA-block #CTA p{
     padding: 10px 15px;
-    background-color: teal;
+    background-color: #1b1433;
     border-radius: 5px;
     color: white;
     font-size: 20px;
@@ -715,7 +715,7 @@ body,html{
 }
 
 footer{
-    background-color: #1b1433;
+    background-color: #000233;
     width: 100vw;
     padding-top: 50px;
     padding-bottom: 10px;
