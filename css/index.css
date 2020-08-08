@@ -676,7 +676,8 @@ body,html{
 
 #third-block-body #CTA-block #CTA p{
     padding: 10px 15px;
-    background-color: #1b1433;
+    /* background-color: #1b1433; */
+    background-color: red;
     border-radius: 5px;
     color: white;
     font-size: 20px;
@@ -692,6 +693,7 @@ body,html{
 
 #third-block-body #CTA-block #CTA p:hover{
     box-shadow: 0 0 0 0 grey;
+    background-color: yellowgreen;
 }
 
 #getting-started #third-block-body-animate{
@@ -715,7 +717,7 @@ body,html{
 }
 
 footer{
-    background-color: black;
+    background-color: #222542;
     width: 100vw;
     padding-top: 50px;
     padding-bottom: 10px;
