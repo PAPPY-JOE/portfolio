@@ -684,6 +684,14 @@ body,html{
     white-space: nowrap;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    box-shadow: 6px 5px 4px 0px rgb(88, 86, 86, 0.9);
+    cursor: pointer;
+    transition: .2s ease;
+
+}
+
+#third-block-body #CTA-block #CTA p:hover{
+    box-shadow: 0 0 0 0 grey;
 }
 
 #getting-started #third-block-body-animate{
