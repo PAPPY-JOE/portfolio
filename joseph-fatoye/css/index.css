@@ -366,7 +366,7 @@ body,html{
     width: 70vw;
     height: 100px;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: end;
     flex-direction: row;
     position: relative;
@@ -376,8 +376,10 @@ body,html{
 #reviews #reviews-body-header div{
     width: 80vw;
     margin-left: 10vw;
-    padding-top: 30px;
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border-left: 3px solid white;
 }
 
 #reviews #reviews-body-header div p{
@@ -386,7 +388,6 @@ body,html{
     font-weight: 500;
     font-size: 25px;
     color: black;
-    border-left: 3px solid white;
     text-transform: uppercase;
 }
 
@@ -583,6 +584,37 @@ body,html{
     position: sticky;
 }
 
+#float-left-header{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#float-left-header div{
+    height: 20px;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    border-right: 3px solid red;
+}
+
+#float-left-header div p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    padding-right: 35px;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 #third-block-body{
     height: 100%;
     width: 100%;
@@ -624,6 +656,36 @@ body,html{
     color: black;
 }
 
+#third-block-body #CTA-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#third-block-body #CTA-block #CTA{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 60%;
+    margin: 20px 0 0 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#third-block-body #CTA-block #CTA p{
+    padding: 10px 15px;
+    background-color: #1b1433;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
 #getting-started #third-block-body-animate{
     width: 500px;
     z-index: 1;
@@ -642,6 +704,133 @@ body,html{
     height: 300px;
     width: 500px;
     border-radius: 5px;
+}
+
+footer{
+    background-color: #383d6b;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+footer #upper-footer{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    width: 100vw;
+}
+
+footer #upper-footer-body{
+    width: 70%;
+    height: 100%;
+}
+
+footer #upper-footer #footer-name{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #upper-footer #footer-name-body{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #upper-footer #footer-name-body p{
+    font-family: 'Inconsolata', sans-serif;
+    color: wheat;
+    font-size: 35px;
+    line-height: 42px;
+    white-space: nowrap;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer #footer-CTA{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-CTA p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+footer #footer-CTA p a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: teal;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+
+footer #footer-icons{
+    height: 40px;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-icons div{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-icons i{
+    color: grey;
+    transition: .15s ease;
+    font-size: 30px;
+}
+
+footer #footer-icons i:hover{
+    color: white;
+    font-size: 32px;
+}
+
+footer #lower-footer{
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+footer #lower-footer p{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    white-space: nowrap;
+    color: gray;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1040px){
@@ -1210,7 +1399,20 @@ body,html{
 
 
 
+/* Third Block */
 
+
+
+#third-block-body #third-block-body-text p{
+    font-size: 14px;
+    
+}
+
+#third-block-body #CTA-block #CTA p{
+    font-size: 18px;
+    
+    
+}
 
 
 }
