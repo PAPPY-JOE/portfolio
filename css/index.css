@@ -103,7 +103,7 @@ body,html{
 }
 
 .menu-body{
-    position: fixed;
+    position: absolute;
     margin-top: 15px;
     margin-left: 25px;
     height: 40px;
@@ -190,7 +190,7 @@ body,html{
     margin-left: 5%;
     top: 70px;
     margin-top: 10px;
-    position: fixed;
+    position: absolute;
     background-color: #efefef;
     display: flex;
     align-content: center;
