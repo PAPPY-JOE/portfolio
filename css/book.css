@@ -25,11 +25,12 @@ body, html{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 5px 2px 1px rgb(154, 152, 152);
 }
 
 #menu #menu-body:hover{
-    box-shadow: 1px 3px 2px 2px rgb(154, 152, 152) inset;
-    
+    /* box-shadow: 1px 3px 2px 2px rgb(154, 152, 152); */
+    box-shadow: none;    
 }
 
  #menu #menu-body i{
@@ -155,6 +156,7 @@ main #first-block-text #text p{
     font-size: 18px;
     line-height: 22px;
     color: black;
+    text-align: center;
 }
 
 main #first-block-text #CTA{
