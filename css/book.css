@@ -1,0 +1,915 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    background-color: #e7e7e3;
+}
+
+
+/* Menu */
+       
+.menu-body{
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: #091a45;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 1px;
+    transition: .5s  ease;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu #menu-body:hover{
+    box-shadow: 1px 3px 2px 2px rgb(154, 152, 152) inset;
+    
+}
+
+ #menu #menu-body i{
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+/* Landing Block / Section */
+main #main-header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main #main-header h1{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    color: black;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main #first-block{
+    width: 100vw;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main #first-block-img{
+    position: relative;
+    width: 400px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+main #first-block-img #f-b-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 60%;
+    border-radius: 5px;
+}
+main #first-block-img img{
+    height: 400px;
+    width: 400px;
+
+}
+
+main #first-block-text{
+    margin-left: -50px;
+    width: 400px;
+}
+
+main #f-b-t-body{
+    margin-top: 100px;
+    width: 380px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+}
+
+main #f-b-t-body #top{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+main #f-b-t-body #top p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main #first-block-text #header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+main #first-block-text #header p{
+    font-family: 'PT Serif', sans-serif;
+    font-size: 35px;
+    line-height: 37px;
+    color: red;
+    text-align: center;
+    font-weight: 400;
+}
+
+main #first-block-text #text{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+main #first-block-text #text p{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+
+main #first-block-text #CTA{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+main #first-block-text #CTA p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: red;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 4px 1px grey;
+    border-radius: 5px;
+    transition: all ease .3s;
+}
+
+main #first-block-text #CTA p:hover{
+    background-color: yellowgreen;
+    box-shadow: none;
+}
+
+
+/* Second Main Block */
+
+#business-type #b-t-body{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 100px 0;
+    background-color: white;
+    position: relative;
+}
+
+#business-type #b-t-img{
+    margin: 50px 0 0 -30px;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+#business-type #b-t-img #b-t-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 49%;
+    border-radius: 5px;
+}
+
+#business-type #b-t-img img{
+    height: 250px;
+    width: 400px;
+    
+}
+
+#business-type #b-t-body-block{
+    width: 400px;
+    position: relative;
+    background-color: #e7e7e3;
+    border-radius: 5px;
+    padding: 15px 30px 30px 30px;
+    margin: 45px 0 0 0;
+
+}
+
+#business-type #b-t-body-block #top p{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#business-type #b-t-body-block #b-t-header{
+    padding: 22px 25px 40px 0;
+
+}
+
+#business-type #b-t-body-block #b-t-header p{
+    font-family: 'PT Serif', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 37px;
+    color: #3b4c97;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#business-type #b-t-body-block #b-t-text{
+    padding: 0 25px 0 25px;
+}
+
+#business-type #b-t-body-block #b-t-text p{
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    text-align: center;
+}
+
+#business-type #b-t-body-block #CTA{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 20px 0;
+}
+
+#business-type #b-t-body-block #CTA a{
+    text-decoration: none;
+}
+
+#business-type #b-t-body-block #CTA a p{
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    box-shadow: 5px 5px 4px 1px grey;
+    border-radius: 5px;
+    transition: all ease .3s;
+    padding: 10px 15px;
+    }
+
+#business-type #b-t-body-block #CTA a p:hover{
+    background-color: yellowgreen;
+    box-shadow: none;
+    }
+
+
+/* Third Main Block */
+
+#third-block{
+    background-color: wheat;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#third-block #t-b-body{
+    padding: 29px 45px;
+    width: 800px;
+    background-color: white;
+    box-shadow: 10px 10px 4px 1px grey;
+    border-radius: 5px;
+}
+
+#third-block #t-b-body #t-b-b-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#third-block #t-b-body #t-b-b-header p{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 30px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+#third-block #t-b-body #t-b-b-text-top p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#third-block #t-b-body #t-b-b-text{
+    display: grid;
+    grid-template-columns: 65px auto;
+    padding: 20px 0;
+}
+
+
+#third-block #t-b-body #t-b-b-text i{
+    color: tomato;
+    font-size: 22px;
+}
+
+
+#third-block #t-b-body #t-b-b-text p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+/* Fourth Main Block */
+
+#problem-source{
+    padding: 50px 0;
+    background-color: white;
+    width: 100vw;
+}
+
+
+#problem-source #p-s-body p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: red;
+    text-align: center;
+    padding: 0 35px;
+    letter-spacing: 2px;
+}
+
+
+/* Fifth Main Block */
+
+#how-i-differ{
+    width: 100vw;
+    padding: 50px 0;
+}
+
+#how-i-differ #h-i-d-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#how-i-differ #h-i-d-b-img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: url(../images/20200808_233710.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#how-i-differ #h-i-d-b-img #h-i-d-b-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 45%;
+    border-radius: 5px;
+}
+
+#how-i-differ #h-i-d-b-text{
+    padding: 20px 25px;
+    margin: 0;
+    margin-left: -50px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    width: 400px;
+}
+
+#how-i-differ #h-i-d-b-text #h-i-d-b-header p{
+    font-family: 'Inconsolata',sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    color: red;
+}
+
+.h-i-d-b-text{
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 15px 0;
+}
+
+.h-i-d-b-text i{
+    font-size: 18px;
+    color: rgb(191, 183, 183);
+}
+
+.h-i-d-b-text p{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+#get-help{
+    width: 100vw;
+    background-color: white;
+}
+
+#get-help #g-h-body{
+    padding: 50px 60px;
+}
+
+#get-help #g-h-body p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: red;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* How it works - TABS */
+
+#how-it-works-tabs{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#h-i-w-t-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    line-height: 55px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #091a45;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    background-color: wheat;
+    padding: 20px 10px 10px;
+    margin: 50px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.mytabs #float{
+    position: absolute;
+    top: 10px;
+}
+
+.mytabs #float i{
+    font-size: 15px;
+}
+
+.mytabs input[type='radio'] {
+    display: none;
+}
+
+.mytabs label{
+    padding: 10px;
+    background-color: #e7e7e3;
+    margin-top: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 1px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.mytabs .tab{
+    width: 100%;
+    padding: 35px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    order: 1;
+    text-align: center;
+    display: none;
+}
+
+.mytabs .tab div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mytabs .tab i{
+    color: wheat;
+    font-size: 50px;
+    background-color: #e7e7e3;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.mytabs .tab h2{
+    font-size: 35px;
+    line-height: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #091a45;
+}
+
+.mytabs .tab p{
+    font-family: 'Inconsolata', sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.mytabs .tab a{
+    text-decoration: none;
+    background-color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    box-shadow: 5px 5px 4px 1px grey;
+    border-radius: 5px;
+    transition: all ease .3s;
+    padding: 10px 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.mytabs .tab a:hover{
+    box-shadow: none;
+}
+
+
+.mytabs input[type='radio']:checked + label + .tab{
+    display: block;
+}
+
+.mytabs input[type='radio']:checked + label{
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+
+
+@media only screen and (max-width: 850px){
+    #business-type #b-t-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #business-type #b-t-img{
+        margin: 50px  0 -80px 0;
+    
+    }
+
+    #business-type #b-t-body-block{
+        padding: 50px 20px 15px 20px;
+        position: relative;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    main #first-block{
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+        
+    main #f-b-t-body{
+        margin: 0;
+        padding: 0;
+        width: 380px;
+        position: relative;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    main #first-block-text{
+        margin: -40px -20px 0 0;
+
+    }
+    main #first-block-text #header{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    main #first-block-text #header p{
+        font-family: 'PT Serif', sans-serif;
+        font-size: 35px;
+        line-height: 45px;
+        color: red;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    main #first-block-text #text{
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    main #first-block-text #text p{
+        line-height: 25px;
+    } 
+
+    /* Second Main Block */
+    
+    #business-type #b-t-body-block{
+        width: 90vw;
+    }
+
+        
+    /* Fifth Main Block */
+/* 
+    #how-i-differ{
+        width: 100vw;
+        padding: 50px 0;
+    } */
+
+    #how-i-differ #h-i-d-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #how-i-differ #h-i-d-b-img{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        background-image: url(../images/20200808_233710.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 11;
+    }
+
+    #how-i-differ #h-i-d-b-img #h-i-d-b-img-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 45%;
+        border-radius: 5px;
+    }
+
+    #how-i-differ #h-i-d-b-text{
+        padding: 55px 25px 20px 25px;
+        margin: 0;
+        margin-top: -40px;
+        position: relative;
+        background-color: white;
+        border-radius: 5px;
+        width: 80vw;
+    }
+
+    #how-i-differ #h-i-d-b-text #h-i-d-b-header p{
+        font-family: 'Inconsolata',sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 45px;
+        text-align: center;
+        color: red;
+    }
+
+    .h-i-d-b-text{
+        display: grid;
+        grid-template-columns: 40px auto;
+        padding: 15px 0;
+    }
+
+    .h-i-d-b-text i{
+        font-size: 18px;
+        color: rgb(191, 183, 183);
+    }
+
+    .h-i-d-b-text p{
+        font-size: 18px;
+        line-height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    
+/* How it works - TABS */
+
+
+#h-i-w-t-header{
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    background-color: wheat;
+    padding: 20px 10px 10px 10px;
+    margin: 50px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.mytabs #float{
+    position: absolute;
+    top: 10px;
+}
+
+.mytabs #float i{
+    font-size: 15px;
+}
+
+.mytabs input[type='radio'] {
+    display: none;
+}
+
+.mytabs .tab a{
+    white-space: nowrap;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 479px){
+    main #first-block{
+        padding: 40px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main #first-block-text{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        height: auto;
+    }
+
+    main #first-block-text #f-b-t-body{
+        width: 100%;
+        height: 100%;
+    }
+
+    main #first-block-text #CTA{
+        padding: 10px 30px 30px 30px;
+    }
+
+     /* Second Main Block */
+
+    #business-type #b-t-body-block #top p{
+        line-height: 30px;
+    }
+
+    /* Third Main Block */
+        
+    #third-block #t-b-body{
+        padding: 29px 45px;
+        width: 70vw;
+        background-color: white;
+        box-shadow: 10px 10px 4px 1px grey;
+        border-radius: 5px;
+    }
+
+        
+    #third-block #t-b-body #t-b-b-text{
+        display: grid;
+        grid-template-columns: 40px auto;
+    }
+
+        
+    /* Fourth Main Block */
+
+    #problem-source #p-s-body p{
+        font-size: 25px;
+        line-height: 35px;
+       
+    }
+    
+    #get-help #g-h-body{
+        padding: 50px 35px;
+    }
+
+        
+    #get-help #g-h-body p{
+        font-size: 25px;
+        line-height: 35px;
+      
+    }
+
+}
