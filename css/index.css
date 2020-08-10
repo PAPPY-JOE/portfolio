@@ -36,7 +36,7 @@ body,html{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     padding-bottom: 10vh;
     width: 100%;
     color: white;
@@ -56,7 +56,7 @@ body,html{
 }
 
 #hero #hero-overlay{
-    height: 110vh;
+    height: 100%;
 }
 
 @media only screen and (max-height: 700px){
@@ -169,17 +169,16 @@ body,html{
 }
 
 #hero #navigation li i{
-    width: 0;
+    width: 0px;
     height: 1px;
     display: block;
     margin: 0;
     margin-top: -15px;
     transition: .3s ease;
+    background-color: red;
 }
 #hero #navigation li:hover i{
     width: 40px;
-    height: 1px;
-    background-color: red;
     display: block;
     margin: 0;
     margin-top: -15px;
@@ -255,7 +254,7 @@ body,html{
     background-color: white;
     color: black;       
     height: 100%; 
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -269,6 +268,8 @@ body,html{
     padding: 0;
     height: 100%;
     padding-bottom: 50px;
+    
+    
 }
 
 #hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
@@ -307,24 +308,41 @@ body,html{
     height: 15%;
 }
 
-#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a span{
     padding: 15px;
-    color: white;
     background-color: red;
+    font-family: 'Lato';
+    color: white;
     font-size: 20px;
     line-height: 20px;
-    font-family: 'Lato';
-    width: 20%;
+    width: auto;
     border-radius: 5px;
     text-align: center;
     transition: .3s ease;
-    position: absolute;
-    box-shadow: 3px 4px 3px 1px rgba(171, 168, 168, 0.933);
+    position: relative;
+    box-shadow: 6px 5px 4px 0px rgba(171, 168, 168, 0.933);
     cursor: pointer;
+    white-space: nowrap;
+
 }
 
+
+
 #hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
-    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933);
+    box-shadow: 0px 0px 0px 0px rgba(171, 168, 168, 0.933);
 
 }
 
@@ -357,7 +375,8 @@ body,html{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    height: 90vh;
+    height: 550px;
+    padding-bottom: 10vh;
     position: relative;
 
 }
@@ -470,7 +489,7 @@ body,html{
 #reviews-wrapper #reviews-body-container{
     height: 200px;
     width: 200px;
-    margin: 0 100px 0 100px;
+    margin: 20px 100px 0 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -479,9 +498,12 @@ body,html{
     border-radius: 5px;
     padding: 15px;
     box-shadow: 20px 20px 8px 2px grey;
-
+    transition: all ease .35s;
 }
 
+#reviews-wrapper #reviews-body-container:hover{
+    margin-top: 0px;
+}
 
 #reviews-wrapper .praise{
     
@@ -674,9 +696,12 @@ body,html{
     border-radius: 5px;
 }
 
+#third-block-body #CTA-block #CTA a{
+    text-decoration: none;
+}
+
 #third-block-body #CTA-block #CTA p{
     padding: 10px 15px;
-    /* background-color: #1b1433; */
     background-color: red;
     border-radius: 5px;
     color: white;
@@ -685,7 +710,8 @@ body,html{
     white-space: nowrap;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    box-shadow: 6px 5px 4px 0px rgb(88, 86, 86, 0.9);
+    /* box-shadow: 6px 5px 4px 0px rgb(88, 86, 86, 0.9); */
+    box-shadow: 6px 5px 4px 0px rgba(171, 168, 168, 0.933);
     cursor: pointer;
     transition: .2s ease;
 
@@ -846,12 +872,12 @@ footer #lower-footer p{
 @media only screen and (max-width: 1040px){
 
     #hero{
-        height: 125vh;
+        height: auto;
         padding-bottom: 10vh;
     }
 
     #hero #hero-overlay{
-        height: 135vh;
+        height: 100%;
     }
 
     #hero #header #owners-name{
@@ -902,7 +928,7 @@ footer #lower-footer p{
 }
 
 #hero #first-block #body-text #body-text-block #body-text-block-bottom-paragraph{
-    padding: 10px 45px 10px 45px ;
+    padding: 10px 45px 25px 45px ;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -933,11 +959,12 @@ footer #lower-footer p{
 @media only screen and (max-width: 768px){
 
     #hero{
-        height: 155vh;
+        height: auto;
+        padding-bottom: 10vh;
     }
 
     #hero #hero-overlay{
-        height: 165vh;
+        height: 100%;
     }
 
     #hero #header #navigation{
@@ -991,7 +1018,7 @@ footer #lower-footer p{
     background-color: white;
     color: black;     
     width: 80vw;  
-    height: 75vh; 
+    height: auto; 
     padding-top: 10px;
     padding-bottom: 50px;
     border-radius: 0px;
@@ -1048,16 +1075,15 @@ footer #lower-footer p{
     height: 15%;
 }
 
-#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
-    padding: 15px;
-    font-size: 16px;
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a span{
+    padding: 10px 15px;
+    font-size: 18px;
     line-height: 20px;
-    width: 20%;
     margin-top: 15px;
 }
 
-#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span:hover{
-    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933);
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a span:hover{
+    box-shadow: 1px 1px 3px 1px rgba(171, 168, 168, 0.933) ;
 
 }
 
@@ -1143,7 +1169,7 @@ footer #lower-footer p{
     background-color: white;
     color: black;     
     width: 80vw;  
-    height: 75vh; 
+    height: auto; 
     padding-top: 5px;
     padding-bottom: 50px;
     border-radius: 0px;
@@ -1322,7 +1348,7 @@ footer #lower-footer p{
     background-color: white;
     color: black;     
     width: 90vw;  
-    height: 75vh; 
+    height: auto; 
     padding-top: 5px;
     padding-bottom: 50px;
     border-radius: 0px;
@@ -1428,8 +1454,14 @@ footer #lower-footer p{
 }
 
 
-@media only screen and (max-width: 395px){
+@media only screen and (max-width: 435px){
     
+#hero #body-text-block{
+    height: auto;
+    position: relative;
+    margin-top: 10px;
+}
+
 #hero #first-block #body-text #body-text-block #body-text-block-top-paragraph{
     height: 25px;
     font-family: 'Lato', sans-serif;
@@ -1437,6 +1469,8 @@ footer #lower-footer p{
     font-weight: 400;
     line-height: 50px;
     text-align: center;
+    padding-bottom: 20px;
+    margin-top: 0;
 }
 
 #hero #first-block #body-text #body-text-block h1{
@@ -1447,7 +1481,7 @@ footer #lower-footer p{
     color: red;
     text-align: center;
     padding: 0 45px 0 45px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;
 }
 
@@ -1466,15 +1500,22 @@ footer #lower-footer p{
     align-content: center;
     width: 100%;
     height: 15%;
-    padding-top: 15px;
+    padding: 15px 0;
 }
 
-#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a {
+    padding: 15px 0;
+    display: block;
+    height: auto;
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a span{
     padding: 15px;
     font-size: 14px;
     line-height: 10px;
-    width: 20%;
+    width: auto;
     margin-top: 0;
+    height: auto;
 }
 
 
@@ -1482,8 +1523,16 @@ footer #lower-footer p{
 
 
 @media only screen and (max-width: 355px){
-
     
+    #hero{
+        height: auto;
+        overflow: hidden;
+    }
+
+    #hero #hero-overlay{
+        height: 100%;
+    }
+
 #hero #owners-name h1{        
     line-height: 30px;
     padding-top: 10px;
@@ -1501,16 +1550,14 @@ footer #lower-footer p{
     background-color: white;
     color: black;     
     width: 90vw;  
-    height: 85vh; 
+    height: auto; 
     padding-top: 10px;
     padding-bottom: 40px;
     border-radius: 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: auto 0;
-    overflow: scroll;
 }
-
 
     #hero #first-block aside{
         background-image: url(../images/20200804_020522.jpg);
@@ -1533,7 +1580,7 @@ footer #lower-footer p{
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
-    padding: 20px 10px;
+    padding: 10px 10px 30px 10px;
     text-align: center;
 }
 
@@ -1567,15 +1614,24 @@ footer #lower-footer p{
     padding-top: 15px;
 }
 
-#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph span{
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a{
     padding: 15px;
     font-size: 14px;
     line-height: 10px;
-    width: 35%;
+    width: 100%;
     padding: 20px;
     margin-top: 0;
     overflow: hidden;
+    border-radius: 5px;
 }
 
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a span{
+    box-shadow: 6px 5px 4px 0px rgba(171, 168, 168, 0.933);
+}
+
+#hero #first-block #body-text #body-text-block #body-text-block-link-paragraph a span:hover{
+    box-shadow: none;
+}
 
 }

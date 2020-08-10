@@ -4,12 +4,16 @@ const button1 = document.getElementById('background2');
 
 button1.onclick = function () {
   document.getElementById('overflow-guide').scrollLeft += 500;
+  document.getElementById('overflow-guide').style.scrollBehavior = "smooth";
+
 };
 
 const button2 = document.getElementById('background1');
 
 button2.onclick = function () {
   document.getElementById('overflow-guide').scrollLeft -= 500;
+  document.getElementById('overflow-guide').style.scrollBehavior = "smooth";
+
 };
 
 setInterval(() => {
