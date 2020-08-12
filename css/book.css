@@ -10,22 +10,22 @@ body, html{
 
 /* Menu */
        
-.menu-body{
-    position: fixed;
+#menu-body{
+    position: absolute;
     margin-top: 15px;
     margin-left: 25px;
-    height: 40px;
-    width: 40px;
+    padding: 5px 10px;
+    width: auto;
+    height: auto;       
     background-color: #091a45;
     text-align: center;
     border-radius: 5px;
-    padding: 0 1px;
     transition: .5s  ease;
     z-index: 50;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 2px 1px rgb(154, 152, 152);
+    box-shadow: 3px 3px 2px 1px rgb(154, 152, 152);
 }
 
 #menu #menu-body:hover{
@@ -34,7 +34,7 @@ body, html{
 }
 
  #menu #menu-body i{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     cursor: pointer;
 
@@ -661,6 +661,28 @@ main #first-block-text #CTA p:hover{
 
 
 @media only screen and (max-width: 768px){
+        
+    main #main-header{
+        width: 100vw;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+
+    main #main-header h1{
+        font-family: 'Inconsolata', sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+        color: black;
+        letter-spacing: 2px;
+        text-align: right;
+        margin-right: 25px;
+        text-transform: uppercase;
+    }
 
     main #first-block{
         padding: 50px 0;
@@ -913,5 +935,194 @@ main #first-block-text #CTA p:hover{
         line-height: 35px;
       
     }
+
+}
+
+
+
+@media only screen and (max-width: 410px){      
+
+    /* Menu */
+        
+    .menu-body{
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 5px 10px;
+        background-color: #091a45;
+        text-align: center;
+        border-radius: 5px;
+        transition: .5s  ease;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 2px 1px rgb(154, 152, 152);
+    }
+
+    #menu #menu-body:hover{
+        /* box-shadow: 1px 3px 2px 2px rgb(154, 152, 152); */
+        box-shadow: none;    
+    }
+
+    #menu #menu-body i{
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+
+    }
+        /* Header */
+    main #main-header h1{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 35px;
+        color: black;
+        letter-spacing: 2px;
+        margin-left: 65px;
+    }
+
+
+    /* How it works - TABS */
+
+    #how-it-works-tabs{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #h-i-w-t-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        line-height: 55px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #091a45;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .mytabs{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        background-color: wheat;
+        padding: 20px 10px 10px;
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .mytabs #float{
+        position: absolute;
+        top: 10px;
+    }
+
+    .mytabs #float i{
+        font-size: 15px;
+    }
+
+    .mytabs input[type='radio'] {
+        display: none;
+    }
+
+    .mytabs label{
+        padding: 10px;
+        background-color: #e7e7e3;
+        margin-top: 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-right: 1px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+    }
+
+    .mytabs .tab{
+        width: 80%;
+        padding: 25px;
+        background-color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        order: 1;
+        text-align: center;
+        display: none;
+    }
+
+    .mytabs .tab div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mytabs .tab i{
+        color: #091a45;
+        font-size: 50px;
+        background-color: #e7e7e3;
+        padding: 15px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .mytabs .tab h2{
+        font-size: 35px;
+        line-height: 40px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #091a45;
+    }
+
+    .mytabs .tab #cta{
+        font-family: 'Inconsolata', sans-serif;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px;
+        background-color: red;
+        transition: all ease .3s;
+        white-space: nowrap;
+        text-align: center;
+        box-shadow: 5px 5px 4px 1px grey;
+        border-radius: 5px;
+    }
+
+    .mytabs .tab a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;  
+        color: white;
+        word-wrap: normal;
+        white-space: normal;
+        letter-spacing: 1px;
+        background-color: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mytabs .tab a:hover{
+        box-shadow: none;
+    }
+
+
+    .mytabs input[type='radio']:checked + label + .tab{
+        display: block;
+    }
+
+    .mytabs input[type='radio']:checked + label{
+        background-color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    
 
 }
