@@ -17,6 +17,8 @@ main{
     border-radius: 5px;
     height: auto;
     width: 80vw;
+    position: relative;
+    top: 50px;
 }
 
 
@@ -290,6 +292,7 @@ main{
 
 #form1 #f-name, #form1 #l-name{
     width: 43%;
+    text-transform: capitalize;
 }
 
 #form1 #f-name{

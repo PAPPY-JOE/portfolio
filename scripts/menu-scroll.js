@@ -3,8 +3,8 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("menu").style.marginTop = "15px";
-    document.getElementById("menu-container").style.marginTop = "10px";
+    document.getElementById("menu").style.marginTop = "0px";
+    document.getElementById("menu-container").style.marginTop = "15px";
 
   } else {
     document.getElementById("menu").style.marginTop = "-200px";
