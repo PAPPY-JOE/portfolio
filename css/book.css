@@ -7,40 +7,6 @@ body, html{
     background-color: #e7e7e3;
 }
 
-
-/* Menu */
-       
-#menu-body{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 25px;
-    padding: 5px 10px;
-    width: auto;
-    height: auto;       
-    background-color: #091a45;
-    text-align: center;
-    border-radius: 5px;
-    transition: .5s  ease;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 3px 3px 2px 1px rgb(154, 152, 152);
-}
-
-#menu #menu-body:hover{
-    /* box-shadow: 1px 3px 2px 2px rgb(154, 152, 152); */
-    box-shadow: none;    
-}
-
- #menu #menu-body i{
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-
-}
-
-
 /* Landing Block / Section */
 main #main-header{
     width: 100vw;
@@ -167,6 +133,9 @@ main #first-block-text #CTA{
     justify-content: center;
 }
 
+main #first-block-text #CTA a{
+    text-decoration: none;
+}
 main #first-block-text #CTA p{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -611,6 +580,7 @@ main #first-block-text #CTA p:hover{
 
 .mytabs .tab a:hover{
     box-shadow: none;
+    background-color: yellowgreen;
 }
 
 
@@ -942,34 +912,6 @@ main #first-block-text #CTA p:hover{
 
 @media only screen and (max-width: 410px){      
 
-    /* Menu */
-        
-    .menu-body{
-        margin-top: 15px;
-        margin-left: 15px;
-        padding: 5px 10px;
-        background-color: #091a45;
-        text-align: center;
-        border-radius: 5px;
-        transition: .5s  ease;
-        z-index: 50;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 3px 3px 2px 1px rgb(154, 152, 152);
-    }
-
-    #menu #menu-body:hover{
-        /* box-shadow: 1px 3px 2px 2px rgb(154, 152, 152); */
-        box-shadow: none;    
-    }
-
-    #menu #menu-body i{
-        font-size: 14px;
-        color: white;
-        cursor: pointer;
-
-    }
         /* Header */
     main #main-header h1{
         font-weight: 600;

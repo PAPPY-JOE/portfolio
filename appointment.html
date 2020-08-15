@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Book your one hour session with Joseph Fatoye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Website design, website development">
+    <link rel="stylesheet" href="css/menu-footer.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;577;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;469;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Joseph Fatoye | Book An Appointment</title>
+    <link rel="shortcut icon" href="images/20200804_020522.jpg" type="image/x-icon">
+    <script src="scripts/onload.js"></script>
+</head>
+<body onload="onload()">
+    <div id="onload">
+        <h1><span style="color: white;">Joseph</span> Fatoye</h1>
+    </div>
+
+    <div id="menu">
+        <a href="index.html"> 
+            <div id="menu-body">
+                <i class="fa fa-chevron-left"></i> 
+            </div>
+        </a>
+    </div>
+
+      <main>
+        <div class="stages" id="appointment-block">
+            <div class="toggle-main" id="book-toggle-trigger">
+                <p><span>1</span> Book Appointment
+                    <br>
+                    <br>
+                    <div></div>
+                </p>
+                
+            </div>
+            
+            <div class="toggle" id="book-toggle">
+                <div class="header">
+                    <p> One Hour session <b> $25.00</b></p>
+                </div>
+
+                <div class="mytabs">
+                    <div id="float">
+                        <i class="fa fa-circle" aria-hidden="true" style="color: red;"></i>
+                        <i class="fa fa-circle" aria-hidden="true" style="color: rgb(255, 176, 29);"></i>
+                        <i class="fa fa-circle" aria-hidden="true" style="color: rgb(140, 208, 39);"></i>
+                    </div>
+        
+                        <input required type="radio" name="mytabs" id="tabfree" checked="checked">
+                        <label for="tabfree" id="label1">This Week</label>
+                        <div class="tab">
+                           <div>
+                               <table>
+                                   <tr>
+                                       <th id="monday-h">Monday</th>
+                                       <th id="wednesday-h">Wednesday</th>
+                                       <th id="friday-h">Friday</th>
+                                   </tr>
+
+                                   <tr>
+                                       <td class="monday" id="monday1">
+                                            <p>9:00am</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                       <td class="wednesday" id="wednesday1">
+                                            <p>9:00am</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                       <td class="friday" id="friday1">
+                                            <p>11:00am</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                   </tr>
+
+                                   <tr>
+                                       <td class="monday" id="monday2">
+                                            <p>1:00pm</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                       <td class="wednesday" id="wednesday2">
+                                            <p>1:00pm</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                       <td class="friday" id="friday2">
+                                            <p>1:00pm</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                   </tr>
+
+                                   <tr>
+                                       <td class="monday" id="monday3">
+                                            <p>4:00pm</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                       <td class="wednesday" id="wednesday3">
+                                            <p>4:00pm</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                       <td class="friday" id="friday3">
+                                            <p>4:00pm</p>
+
+                                            <div class="continue">
+                                                <p class="onclick">Continue</p>
+                                            </div>
+                                       </td>
+                                   </tr>
+                               </table>
+                           </div>
+                        </div>
+        
+                        <input required type="radio" name="mytabs" id="tab-design">
+                        <label for="tab-design">Next Week</label>
+                        <div class="tab">
+                            <div>
+                                <table id="table2">
+                                    <tr>
+                                        <th id="monday-h">Monday</th>
+                                        <th id="wednesday-h">Wednesday</th>
+                                        <th id="friday-h">Friday</th>
+                                    </tr>
+ 
+                                    <tr>
+                                        <td class="monday" id="monday1">
+                                             <p>9:00am</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                        <td class="wednesday" id="wednesday1">
+                                             <p>9:00am</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                        <td class="friday" id="friday1">
+                                             <p>11:00am</p>
+ 
+                                             <div class="continue" >
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                    </tr>
+ 
+                                    <tr>
+                                        <td class="monday" id="monday2">
+                                             <p>1:00pm</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                        <td class="wednesday" id="wednesday2">
+                                             <p>1:00pm</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                        <td class="friday" id="friday2">
+                                             <p>1:00pm</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                    </tr>
+ 
+                                    <tr>
+                                        <td class="monday" id="monday3">
+                                             <p>4:00pm</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                        <td class="wednesday" id="wednesday3">
+                                             <p>4:00pm</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                        <td class="friday" id="friday3">
+                                             <p>4:00pm</p>
+ 
+                                             <div class="continue">
+                                                 <p class="onclick">Continue</p>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>                
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="stages" id="user-info">
+            <div class="toggle-main">
+                <p><span>2</span> Your Information</p>
+            </div>
+
+            <div class="toggle true" id="user-info-toggle">
+                <div>
+                    <form id="form1" action="index.html" method="get">
+                        <label id="name-label" for="f-name">Name <i>*</i></label>
+                        <div>
+                            <input required type="text" name="f-name" id="f-name" placeholder="First Name" minlength="4">
+                            <input required type="text" name="l-name" id="l-name" placeholder="Last Name" minlength="4">
+                        </div>
+
+                        <label for="user-email">Email <i>*</i></label>
+                        <div>
+                            <input required type="email" name="user-email" id="user-email" placeholder="Email ">
+                        </div>
+
+                        <label for="url">Website URL <i>*</i></label>
+                        <div>
+                            <input required type="url" name="url" id="url">
+                        </div>
+
+                        <label for="goals">What do you plan on achieving during our appointment? <i>*</i></label>
+                        <div>
+                            <textarea minlength="25" required name="goals-block" id="goals-block" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <label for="clients">How do you find new clients presently? <i>*</i></label>
+                        <div>
+                            <textarea minlength="25" required name="clients-block" id="clients-block" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <label minlength="25" for="plans">Where do you see your business in 3 months time? <i>*</i></label>
+                        <div>
+                            <textarea id="plan-text" required name="plans-block" id="plans-block" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button>SUBMIT</button>
+                        <p>PROCEED TO PAYMENTS</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="stages" id="confirmation">
+            <div class="toggle-main">
+                <p><span>3</span> Make Payment</p>
+            </div>
+
+            <div class="toggle true" id="confirm-toggle">
+
+                <form id="form2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input required type="hidden" name="cmd" value="_s-xclick">
+                    <input required type="hidden" name="hosted_button_id" value="9HHH43FVXHWR6">
+                    <table>
+                        <tr>
+                            <td>
+                                <input required type="hidden" name="on0" value="Session amount">Session amount</td></tr><tr><td>
+                                <select name="os0">
+                                    <option value="1 session">1 session $25.00 USD</option>
+                                    <option value="2 sessions">2 sessions $40.00 USD</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input required type="hidden" name="currency_code" value="USD">
+                    <input required type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="Paypal Icon" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+            </div>
+        </div>
+
+      </main>
+
+
+
+  
+
+    <footer>
+        <div id="upper-footer">
+            <div id="upper-footer-body">
+                <div id="footer-name">
+                    <div id="footer-name-body">
+                        <p>JOSEPH FATOYE</p>
+                    </div>
+                </div>
+                <div id="footer-CTA">
+                    <p>
+                        <a href="#">Get my amazing emails!</a>
+                    </p>
+                </div>
+                <div id="footer-icons">
+                    <div id="f-instagram">
+                        <a href="https://www.instagram.com/olayemi_jf" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div id="f-facebook">
+                        <a href="https://www.facebook.com/joseph.fatoye.1/" target="_blank">
+                            <i class="fa fa-facebook-official"></i>
+                        </a>
+                    </div>
+                    <div id="f-github">
+                        <a href="https://github.com/PAPPY-JOE" target="_blank">
+                            <i class="fa fa-github-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lower-footer">
+            <p>
+                copyright © 2020 Joseph fatoye
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/appointmentToggle.js"></script>
+    <script src="scripts/appointment.js"></script>
+    <script src="scripts/appointment2.js"></script>
+    
+</body>
+</html>
