@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Onload */
+#onload{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 8000;
+}
+
+#onload h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inconsolata';
+}
+
+/* Menu */
+       
+#menu-body{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 5px 10px;
+    width: auto;
+    height: auto;       
+    background-color: #091a45;
+    text-align: center;
+    border-radius: 5px;
+    transition: .5s  ease;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 2px 1px rgb(154, 152, 152);
+}
+
+#menu #menu-body:hover{
+    /* box-shadow: 1px 3px 2px 2px rgb(154, 152, 152); */
+    box-shadow: none;    
+}
+
+ #menu #menu-body i{
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #222542;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+footer #upper-footer{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    width: 100vw;
+}
+
+footer #upper-footer-body{
+    width: 70%;
+    height: 100%;
+}
+
+footer #upper-footer #footer-name{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #upper-footer #footer-name-body{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #upper-footer #footer-name-body p{
+    font-family: 'Inconsolata', sans-serif;
+    color: wheat;
+    font-size: 35px;
+    line-height: 42px;
+    white-space: nowrap;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer #footer-CTA{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-CTA p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+footer #footer-CTA p a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: teal;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+
+footer #footer-icons{
+    height: 40px;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-icons div{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-icons i{
+    color: grey;
+    transition: .15s ease;
+    font-size: 30px;
+}
+
+footer #footer-icons i:hover{
+    color: white;
+    font-size: 32px;
+}
+
+footer #lower-footer{
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+footer #lower-footer p{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    white-space: nowrap;
+    color: gray;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 410px){      
+
+    /* Menu */
+        
+    .menu-body{
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 5px 10px;
+        background-color: #091a45;
+        text-align: center;
+        border-radius: 5px;
+        transition: .5s  ease;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 2px 1px rgb(154, 152, 152);
+    }
+
+    #menu #menu-body:hover{
+        /* box-shadow: 1px 3px 2px 2px rgb(154, 152, 152); */
+        box-shadow: none;    
+    }
+
+    #menu #menu-body i{
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 355px){
+    
+
+/* Footer */
+
+footer #upper-footer{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    width: 100vw;
+}
+
+footer #upper-footer-body{
+    width: 70%;
+    height: 100%;
+}
+
+footer #upper-footer #footer-name{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #upper-footer #footer-name-body{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer #upper-footer #footer-name-body p{
+    font-family: 'Inconsolata', sans-serif;
+    color: wheat;
+    font-size: 28px;
+    text-align: center;
+    line-height: 35px;
+    white-space: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer #footer-CTA{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-CTA p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+footer #footer-CTA p a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: teal;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+
+footer #footer-icons{
+    height: 40px;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-icons div{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer #footer-icons i{
+    color: grey;
+    transition: .15s ease;
+    font-size: 22px;
+}
+
+footer #footer-icons i:hover{
+    color: white;
+    font-size: 25px;
+}
+
+footer #lower-footer{
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    white-space: normal;
+    padding-bottom: 10px;
+    
+}
+
+footer #lower-footer p{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    color: gray;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: normal;
+    text-align: center;
+}
+
+}
